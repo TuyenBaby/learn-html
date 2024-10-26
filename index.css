@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 100%;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    position: relative;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: rgb(241, 215, 63);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    color: #fff
+}
+
+/* Header Styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #333;
+}
+
+/* Menu Item Styles */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover Effect for Menu Items */
+.menu li a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.submenu {
+    border: 1px solid #fff;
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Submenu List Item Styles */
+.submenu li {
+    display: block;
+    margin: 5px 0;
+}
+
+.submenu li a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s, padding 0.2s;
+    border-radius: 4px;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+    padding-left: 20px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fixed Message Section */
+#mess {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999
+}
+
+.mess2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    top: 60%;
+    right: 110%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+#mess:hover .mess2 {
+    display: block;
+}
+
+/* Logo Styles */
+.logo img {
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px
+        /* Responsive logo size */
+}
+
+/* Image Styles */
+#myImage {
+    height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Navigation List Item Styles */
+nav ul li {
+    font-size: larger;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #myImage {
+        height: auto;
+    }
+}
+
+
+/*Main*/
+main {
+
+
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.anhnv img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Vb Styles */
+.Vb {
+    margin-left: 20px;
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* H2 Styles */
+.Vb h2 {
+    margin-bottom: 15px;
+}
+
+/* List Styles */
+.Vb ul {
+    padding-left: 20px;
+}
+
+.SPM {
+    margin: 20px 0;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-list li {
+    position: relative;
+    margin: 0;
+}
+
+.TT {
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    min-width: 250px;
+    padding: 15px;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+
+}
+
+.TT li {
+    list-style: none;
+    margin: 10px 0;
+    justify-content: left
+}
+
+
+.TT li a:hover {
+    background-color: #f0f0f0;
+    padding-left: 20px;
+}
+
+#foot {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 100px;
+}
+
+#foot h3 {
+    margin-bottom: 20px;
+}
+
+.in4 {
+    list-style-type: none;
+    padding: 0;
+}
+
+.in4 li {
+    margin: 10px 0;
+}
+
+.in4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.in4 a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+#DS {
+    flex: 0 0 200px;
+    /* Chiều rộng cố định */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.DSSP {
+    flex: 1;
+    /* Chiếm phần còn lại của không gian */
+}
+
+
+#DS ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#DS li {
+    margin: 10px 0;
+}
+
+#DS a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#DS a:hover {
+    background-color: #d1d1d1;
+
+    color: #000;
+
+}
+
+#DS a:active {
+    transform: scale(0.98);
+
+}
+
+#product {
+    display: flex;
+    /* Sử dụng Flexbox cho phần tử cha */
+    flex-direction: row;
+    /* Căn chỉnh theo hàng */
+    justify-content: space-between;
+    /* Căn đều khoảng cách giữa nav và section */
+    padding: 20px;
+    /* Thêm khoảng cách cho phần tử cha */
+}
+
+.DSSP {
+    display: flex;
+    /* Sử dụng Flexbox cho danh sách sản phẩm */
+    flex-wrap: wrap;
+    /* Cho phép các sản phẩm xuống dòng nếu không đủ không gian */
+    justify-content: flex-start;
+    /* Căn đều các sản phẩm về bên trái */
+    padding: 20px;
+    flex: 2;
+    /* Chiếm 2 phần không gian so với nav */
+}
+
+.SP {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    /* Đặt chiều rộng cho từng sản phẩm */
+    margin: 10px;
+    /* Khoảng cách giữa các sản phẩm */
+    text-align: center;
+    /* Căn giữa nội dung */
+    transition: transform 0.2s;
+}
+
+.SP:hover {
+    transform: scale(1.05);
+    /* Phóng to nhẹ khi hover */
+}
+
+.SP img {
+    width: 100%;
+    /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng khối */
+    height: auto;
+    /* Giữ tỉ lệ hình ảnh */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.SP p {
+    padding: 10px;
+    /* Khoảng cách cho mô tả sản phẩm */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    /* Màu chữ */
+}

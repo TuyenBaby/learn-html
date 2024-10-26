@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Đồ nội thất || By Group 3</title>
+  <link rel="icon" href="images/Icon.png">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <nav id="header">
+        <div class="logo"><img src="images/Icon.png" width="200px" height="200px" alt="Liên Hệ"></div>
+        <ul class="menu">
+          <li><a href="index.html">HOME</a>
+          </li>
+          <li><a href="trong.html">COLLECTION</a></li>
+          <li><a href="production.html">PRODUCTION</a>
+            <ul class="submenu">
+              <li><a href="banlamvc.html">Bàn Làm Việc</a></li>
+              <li><a href="trong.html">Ghế</a></li>
+              <li><a href="trong.html">Tủ Đựng</a></li>
+              <li><a href="trong.html">Thiết Bị</a></li>
+              <li><a href="trong.html">Công Cụ</a></li>
+              <li><a href="trong.html">Khác</a></li>
+            </ul>
+          </li>
+          <li><a href="trong.html">PROJECTS</a></li>
+          <li><a href="trong.html">CONTACTS</a></li>
+        </ul>
+      </nav>
+      <img id="myImage" src="images/1.jpg" alt="Image">
+      <script>
+        var images = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg"];
+        var currentIndex = 0;
+        function changeImage() {
+          currentIndex++;
+          if (currentIndex >= images.length) {
+            currentIndex = 0;
+          }
+          document.getElementById("myImage").src = images[currentIndex];
+        }
+        setInterval(changeImage, 3000); </script>
+
+      <div id="mess"><a href="trong.html"><img src="images/4416622.png" width="100px" height="100px" alt="Liên Hệ"></a>
+        <span class="mess2">Bạn cần hỗ trợ</span>
+      </div>
+    </header>
+    <main>
+      <h2>Vì sao G3 là cơ sở cung cấp các thiết bị nội thất uy tín!</h2>
+      <div class="anhnv"><img src="images/nhan-vien-ngan-hang-.jpg"></div>
+      <div class="Vb">
+        <ul>
+          <li>Với lịch sử phát triển lâu dài <b>hơn 20 năm</b>, tập đoàn đã từng bước phát triển để tạo ra những sản
+            phẩm ngày càng có những chất lượng cao cấp hơn.</li>
+          <li>Hơn thế nữa, với <b>hơn 15 chi nhánh</b> ở xung quanh khu vực Hà Nội và nhiều
+            chi nhánh lớn nhỏ khác phân bố khắp cả nước giúp các bạn tiếp kiệm thời gian cũng như chi phí vận chuyển.
+          </li>
+          <li>Đội ngũ <b>hơn 5 000 nhân viên</b> đến từ các vùng miền cùng đội hotline có thể tư vấn và đem lại trải
+            nghiệm
+            tuyệt vời
+            khi đến với G3.</li>
+        </ul>
+      </div>
+      <h2>Các sản phẩm mới nhất của chúng tôi!</h2>
+      <div class="SPM">
+        <ul class="product-list">
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/moi1.jpg"><br /> </a>
+            <p>Ghế Lãnh Đạo Da Titan</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Ghế Lãnh Đạo Da Titan</li>
+              <li>Ngày Xuất Bản: 02/10/2024</li>
+              <li>Đối tượng sử dụng: Người có chức, quyền</li>
+              <li>Mô Tả: Là một ghế sang trọng</li>
+              <li>Giá: 5.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/moi2.jpg"><br /></a>
+            <p>Ghế Công Thái Học</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Ghế Công Thái Học</li>
+              <li>Ngày Xuất Bản: 02/10/2024</li>
+              <li>Đối tượng sử dụng: Muốn thoải mái hoặc gặp 1 số vấn đề</li>
+              <li>Mô Tả: Thiết kế phù hợp với mọi người</li>
+              <li>Giá: 3.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/moi3.jpg"><br /> </a>
+            <p>Bàn Lãnh Đạo Sang Trọng</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Bàn Lãnh Đạo Sang Trọng</li>
+              <li>Ngày Xuất Bản: 02/10/2024</li>
+              <li>Đối tượng sử dụng: Người có chức, quyền</li>
+              <li>Mô Tả: Sang trọng toát lên vẻ quyền uy</li>
+              <li>Giá: 58.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/moi4.jpg"><br /></a>
+            <p>Bàn Họp</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Bàn Họp</li>
+              <li>Ngày Xuất Bản: 02/10/2024</li>
+              <li>Đối tượng sử dụng: trong các cuộc họp thông thường</li>
+              <li>Mô Tả: Đem lại 1 không gian vừa đủ nhưng cũng sang trọng</li>
+              <li>Giá: 5.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/moi5.jpg"><br /></a>
+            <p>Tủ Sắt Đựng Tài Liệu</p>
+
+            <ul class="TT">
+              <li>Tủ Sắt Đựng Tài Liệu</li>
+              <li>Ngày Xuất Bản: 02/10/2024</li>
+              <li>Đối tượng sử dụng: Nhân Viên</li>
+              <li>Mô Tả:Sức chứa tốt, bảo quản tốt chống hư hỏng</li>
+              <li>Giá: 3.000.000VND</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <h2>Các sản phẩm bán chạy nhất của chúng tôi!</h2>
+      <div class="SPM">
+        <ul class="product-list">
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/hot1.jpg"><br /></a>
+            <p>Ghế Da Felix</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Ghế Da Felix</li>
+              <li>Số lượt mua: 90</li>
+              <li>Đối tượng sử dụng: </li>
+              <li>Mô Tả: Là một ghế sang trọng</li>
+              <li>Giá: 4.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/hot2.jpg"><br /></a>
+            <p>Ghế Lãnh Đạo Da Fuji</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Ghế Lãnh Đạo Da Fuji</li>
+              <li>Số lượt mua: 60</li>
+              <li>Đối tượng sử dụng: Người có chức, quyền</li>
+              <li>Mô Tả: Thiết kế phù hợp với mọi người</li>
+              <li>Giá: 9.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/hot3.jpg"><br /></a>
+            <p>Bàn Chân Vuông Chữ U</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Bàn Chân Vuông Chữ U</li>
+              <li>Số lượt mua: 125</li>
+              <li>Đối tượng sử dụng: Ai cũng được</li>
+              <li>Mô Tả: Sang trọng toát lên vẻ quyền uy</li>
+              <li>Giá: 2.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/hot4.jpg"><br /></a>
+            <p>Bàn Họp Sonic</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Bàn Họp Sonic</li>
+              <li>Số lượt mua: 78</li>
+              <li>Đối tượng sử dụng: trong các cuộc họp thông thường</li>
+              <li>Mô Tả: Đem lại 1 không gian vừa đủ nhưng cũng sang trọng</li>
+              <li>Giá: 5.000.000VND</li>
+            </ul>
+          </li>
+          <li>
+            <a href="trong.html" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+              <img src="images/hot5.jpg"><br /> </a>
+            <p>Ghế Cafe</p>
+
+            <ul class="TT">
+              <li>Tên Sản Phẩm: Ghế Cafe</li>
+              <li>Ngày Xuất Bản: 02/10/2024</li>
+              <li>Đối tượng sử dụng: Nhân Viên</li>
+              <li>Mô Tả:Xài ổn</li>
+              <li>Giá: 270.000VND</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script>
+      function showDetails(element) {
+        var details = element.parentElement.querySelector('.TT');
+        details.style.display = 'block';
+      }
+
+      function hideDetails(element) {
+        var details = element.parentElement.querySelector('.TT');
+        details.style.display = 'none';
+      }
+    </script>
+    <footer id="foot">
+      <h3>CONTACT INFO</h3>
+      <nav class="in4">
+        <ul>
+          <li>Address:<br /><a href="https://maps.app.goo.gl/Lgb52uMRuir9qbyMA">Học Viện Ngân hàng, 12P.Chùa Bộc, Quang
+              Trung, Đống Đa, Hà Nội</a></li>
+          <li>Phone:<br />+84 364.335.411</li>
+          <li>Email: <br /> 26A4041674@hvnh.edu.vn</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+
+</html>
